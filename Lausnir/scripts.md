@@ -23,5 +23,10 @@ else
 
 fi
 ```
-
-
+### Tímaverkefni 2b
+```bash
+echo "Hvaða sveitarfélag viltu skoða:"
+read NAME
+COUNT=$(grep $NAME fakenames.csv | wc -l)
+echo Í sveitarfélaginu Akureyri eru $COUNT skráðir.
+```
