@@ -1,10 +1,12 @@
 ### verkefni 1a
 ```bash
-Sláðu inn tölu a: 7 
+#!/bin/bash
 
-Sláðu inn tölu b: 8 
-
-a + b = 15
+echo "Sláðu inn tölu a:"
+read a
+echo "Sláðu inn tölu b:"
+read b
+echo "a + b = $(($a + $b))"
 ```
 ### verkefni scripts
 ```bash
