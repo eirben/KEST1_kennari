@@ -55,28 +55,15 @@ else
         echo "$a * $b = "$(($a * $b))
 fi
 ```
+### verkefni_2abc
+```bash
 #!/bin/bash
-echo "Aðgerðir:"
 
-echo "1: a + b"
-
-echo "2: a – b"
-
-echo "Veldu aðgerð"
-read TYPE
-
-echo "Sláðu inn tölu a:"
-read a
-echo "Sláðu inn tölu b:"
-read b
-
-if [ $TYPE -eq 1 ]
-then
-        echo "$a + $b = "$(($a + $b))
-else
-        echo "$a - $b = "$(($a - $b))
-fi
-### verkefni scripts
+echo "Hvaða sveitarfélag viltu skoða:"
+read CITY
+echo  "Í sveitarfélaginu $CITY eru $(grep $CITY fakenames.csv | wc -l) skráðir"
+```
+### verkefni_3b
 ```bash
 #!/bin/bash
 
@@ -100,10 +87,4 @@ else
 
 fi
 ```
-### Tímaverkefni 2b
-```bash
-echo "Hvaða sveitarfélag viltu skoða:"
-read NAME
-COUNT=$(grep $NAME fakenames.csv | wc -l)
-echo Í sveitarfélaginu Akureyri eru $COUNT skráðir.
-```
+
