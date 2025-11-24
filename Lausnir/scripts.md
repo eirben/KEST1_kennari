@@ -27,6 +27,55 @@ else
         echo "$a - $b = "$(($a - $b))
 fi
 ```
+### verkefni1c
+```bash
+#!/bin/bash
+echo "Aðgerðir:"
+echo "1: a + b"
+echo "2: a – b"
+echo "3: a / b"
+echo "4: a x b"
+echo "Veldu aðgerð"
+read TYPE
+echo "Sláðu inn tölu a:"
+read a
+echo "Sláðu inn tölu b:"
+read b
+
+if [ $TYPE -eq 1 ]
+then
+        echo "$a + $b = "$(($a + $b))
+elif [ $TYPE -eq 2 ]
+then
+        echo "$a - $b = "$(($a - $b))
+elif [ $TYPE -eq 3 ]
+then
+        echo "$a / $b = "$(($a / $b))
+else
+        echo "$a * $b = "$(($a * $b))
+fi
+```
+#!/bin/bash
+echo "Aðgerðir:"
+
+echo "1: a + b"
+
+echo "2: a – b"
+
+echo "Veldu aðgerð"
+read TYPE
+
+echo "Sláðu inn tölu a:"
+read a
+echo "Sláðu inn tölu b:"
+read b
+
+if [ $TYPE -eq 1 ]
+then
+        echo "$a + $b = "$(($a + $b))
+else
+        echo "$a - $b = "$(($a - $b))
+fi
 ### verkefni scripts
 ```bash
 #!/bin/bash
