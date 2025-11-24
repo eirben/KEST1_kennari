@@ -1,4 +1,11 @@
+### verkefni 1a
+```bash
+Sláðu inn tölu a: 7 
 
+Sláðu inn tölu b: 8 
+
+a + b = 15
+```
 ### verkefni scripts
 ```bash
 #!/bin/bash
