@@ -8,6 +8,25 @@ echo "Sláðu inn tölu b:"
 read b
 echo "a + b = $(($a + $b))"
 ```
+### verkefni1b
+```bash
+#!/bin/bash
+echo "Aðgerðir:"
+echo "1: a + b"
+echo "2: a – b"
+echo "Veldu aðgerð"
+read TYPE
+echo "Sláðu inn tölu a:"
+read a
+echo "Sláðu inn tölu b:"
+read b
+if [ $TYPE -eq 1 ]
+then
+        echo "$a + $b = "$(($a + $b))
+else
+        echo "$a - $b = "$(($a - $b))
+fi
+```
 ### verkefni scripts
 ```bash
 #!/bin/bash
